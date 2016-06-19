@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="protobuf,python,c++,google," />
+  <meta name="keywords" content="django," />
 
 
 
@@ -57,19 +57,25 @@
 
 
 
-<meta name="description" content="Google Protobuf 本质论
-Google protobuf的特点">
+<meta name="description" content="使用Django差不多两年时间了，用Django开发过3个工具系统和1个百万级的web应用；但关于Django的知识，有一些点还是一知半解的，故此用这一系列文章来过一遍。
+
+创建项目创建一个名字为hello_django的项目1$ django-admin.py startproject hello_django
+12345678910$ tree hello_django/hello_djan">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Protobuf用法(Python/C++)">
-<meta property="og:url" content="http://reanote.github.io/2016/03/29/protobuf/index.html">
+<meta property="og:title" content="Django命令用法">
+<meta property="og:url" content="http://reanote.github.io/2016/06/19/django-commands/index.html">
 <meta property="og:site_name" content="悦读.笔记">
-<meta property="og:description" content="Google Protobuf 本质论
-Google protobuf的特点">
-<meta property="og:updated_time" content="2016-06-18T19:12:33.000Z">
+<meta property="og:description" content="使用Django差不多两年时间了，用Django开发过3个工具系统和1个百万级的web应用；但关于Django的知识，有一些点还是一知半解的，故此用这一系列文章来过一遍。
+
+创建项目创建一个名字为hello_django的项目1$ django-admin.py startproject hello_django
+12345678910$ tree hello_django/hello_djan">
+<meta property="og:updated_time" content="2016-06-19T02:59:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Protobuf用法(Python/C++)">
-<meta name="twitter:description" content="Google Protobuf 本质论
-Google protobuf的特点">
+<meta name="twitter:title" content="Django命令用法">
+<meta name="twitter:description" content="使用Django差不多两年时间了，用Django开发过3个工具系统和1个百万级的web应用；但关于Django的知识，有一些点还是一知半解的，故此用这一系列文章来过一遍。
+
+创建项目创建一个名字为hello_django的项目1$ django-admin.py startproject hello_django
+12345678910$ tree hello_django/hello_djan">
 
 
 
@@ -87,7 +93,7 @@ Google protobuf的特点">
   };
 </script>
 
-  <title> Protobuf用法(Python/C++) | 悦读.笔记 </title>
+  <title> Django命令用法 | 悦读.笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -217,7 +223,7 @@ Google protobuf的特点">
             
             
               
-                Protobuf用法(Python/C++)
+                Django命令用法
               
             
           </h1>
@@ -229,8 +235,8 @@ Google protobuf的特点">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-29T02:07:58+08:00" content="2016-03-29">
-              2016-03-29
+            <time itemprop="dateCreated" datetime="2016-06-19T10:57:59+08:00" content="2016-06-19">
+              2016-06-19
             </time>
           </span>
 
@@ -240,8 +246,8 @@ Google protobuf的特点">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/29/protobuf/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/protobuf/" itemprop="commentsCount"></span>
+                <a href="/2016/06/19/django-commands/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/19/django-commands/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -263,8 +269,12 @@ Google protobuf的特点">
       
 
       
-        <p>Google Protobuf 本质论</p>
-<h2 id="Google-protobuf的特点"><a href="#Google-protobuf的特点" class="headerlink" title="Google protobuf的特点"></a>Google protobuf的特点</h2>
+        <blockquote>
+<p>使用Django差不多两年时间了，用Django开发过3个工具系统和1个百万级的web应用；但关于Django的知识，有一些点还是一知半解的，故此用这一系列文章来过一遍。</p>
+</blockquote>
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个名字为<code>hello_django</code>的项目<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ django-admin.py startproject hello_django</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ tree hello_django/</span><br><span class="line">hello_django/</span><br><span class="line">├── hello_django</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── settings.py</span><br><span class="line">│   ├── urls.py</span><br><span class="line">│   └── wsgi.py</span><br><span class="line">└── manage.py</span><br><span class="line"></span><br><span class="line">1 directory, 5 files</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -278,7 +288,7 @@ Google protobuf的特点">
       
         <div class="post-tags">
           
-            <a href="/tags/protobuf-python-c-google/" rel="tag">#protobuf,python,c++,google</a>
+            <a href="/tags/django/" rel="tag">#django</a>
           
         </div>
       
@@ -287,13 +297,13 @@ Google protobuf的特点">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/29/hello-world/" rel="next" title="悦读 & 笔记">
+                <i class="fa fa-chevron-left"></i> 悦读 & 笔记
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/29/apache-django/" rel="prev" title="Django通过wsgi部署到Apache">
-                Django通过wsgi部署到Apache <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -319,8 +329,8 @@ Google protobuf的特点">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/29/protobuf/"
-           data-title="Protobuf用法(Python/C++)" data-url="http://reanote.github.io/2016/03/29/protobuf/">
+      <div class="ds-thread" data-thread-key="2016/06/19/django-commands/"
+           data-title="Django命令用法" data-url="http://reanote.github.io/2016/06/19/django-commands/">
       </div>
     
   </div>
@@ -409,7 +419,7 @@ Google protobuf的特点">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-protobuf的特点"><span class="nav-number">1.</span> <span class="nav-text">Google protobuf的特点</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">1.</span> <span class="nav-text">创建项目</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
