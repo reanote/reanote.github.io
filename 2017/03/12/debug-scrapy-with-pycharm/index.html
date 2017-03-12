@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Django, Apache, Wsgi," />
+  <meta name="keywords" content="scrapy, pycharm," />
 
 
 
@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="&amp;#x6B65;&amp;#x9AA4;&amp;#xFF1A;Step by Step
-&amp;#x628A;Django&amp;#x5DE5;&amp;#x7A0B;&amp;#x590D;&amp;#x5236;&amp;#x5230;&amp;#xFF0F;var/www/&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF1B;">
+<meta name="description" content="多读点书，多写点字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django通过wsgi部署到Apache">
-<meta property="og:url" content="http://reanote.github.io/2016/03/29/apache-django/index.html">
+<meta property="og:title" content="Scrapy调试之Pycharm">
+<meta property="og:url" content="http://reanote.github.io/2017/03/12/debug-scrapy-with-pycharm/index.html">
 <meta property="og:site_name" content="悦读.笔记">
-<meta property="og:description" content="&amp;#x6B65;&amp;#x9AA4;&amp;#xFF1A;Step by Step
-&amp;#x628A;Django&amp;#x5DE5;&amp;#x7A0B;&amp;#x590D;&amp;#x5236;&amp;#x5230;&amp;#xFF0F;var/www/&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF1B;">
-<meta property="og:updated_time" content="2016-03-28T18:57:08.000Z">
+<meta property="og:description" content="多读点书，多写点字">
+<meta property="og:updated_time" content="2017-03-12T10:35:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Django通过wsgi部署到Apache">
-<meta name="twitter:description" content="&amp;#x6B65;&amp;#x9AA4;&amp;#xFF1A;Step by Step
-&amp;#x628A;Django&amp;#x5DE5;&amp;#x7A0B;&amp;#x590D;&amp;#x5236;&amp;#x5230;&amp;#xFF0F;var/www/&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF1B;">
+<meta name="twitter:title" content="Scrapy调试之Pycharm">
+<meta name="twitter:description" content="多读点书，多写点字">
 
 
 
@@ -87,7 +84,7 @@
   };
 </script>
 
-  <title> Django通过wsgi部署到Apache | 悦读.笔记 </title>
+  <title> Scrapy调试之Pycharm | 悦读.笔记 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -217,7 +214,7 @@
             
             
               
-                Django通过wsgi部署到Apache
+                Scrapy调试之Pycharm
               
             
           </h1>
@@ -229,8 +226,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-29T02:53:32+08:00" content="2016-03-29">
-              2016-03-29
+            <time itemprop="dateCreated" datetime="2017-03-12T18:30:12+08:00" content="2017-03-12">
+              2017-03-12
             </time>
           </span>
 
@@ -240,8 +237,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/29/apache-django/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/apache-django/" itemprop="commentsCount"></span>
+                <a href="/2017/03/12/debug-scrapy-with-pycharm/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/12/debug-scrapy-with-pycharm/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -263,10 +260,7 @@
       
 
       
-        <h2 id="&#x6B65;&#x9AA4;&#xFF1A;Step-by-Step"><a href="#&#x6B65;&#x9AA4;&#xFF1A;Step-by-Step" class="headerlink" title="&#x6B65;&#x9AA4;&#xFF1A;Step by Step"></a>&#x6B65;&#x9AA4;&#xFF1A;Step by Step</h2><ol>
-<li>&#x628A;Django&#x5DE5;&#x7A0B;&#x590D;&#x5236;&#x5230;<code>&#xFF0F;var/www/</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF1B;</li>
-</ol>
-
+        
       
     </div>
 
@@ -280,7 +274,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Django-Apache-Wsgi/" rel="tag">#Django, Apache, Wsgi</a>
+            <a href="/tags/scrapy-pycharm/" rel="tag">#scrapy, pycharm</a>
           
         </div>
       
@@ -289,17 +283,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/29/protobuf/" rel="next" title="Protobuf用法(Python/C++)">
-                <i class="fa fa-chevron-left"></i> Protobuf用法(Python/C++)
+              <a href="/2016/06/19/django-commands/" rel="next" title="Django命令用法">
+                <i class="fa fa-chevron-left"></i> Django命令用法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/29/hello-world/" rel="prev" title="悦读 & 笔记">
-                悦读 & 笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -325,8 +315,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/29/apache-django/"
-           data-title="Django通过wsgi部署到Apache" data-url="http://reanote.github.io/2016/03/29/apache-django/">
+      <div class="ds-thread" data-thread-key="2017/03/12/debug-scrapy-with-pycharm/"
+           data-title="Scrapy调试之Pycharm" data-url="http://reanote.github.io/2017/03/12/debug-scrapy-with-pycharm/">
       </div>
     
   </div>
@@ -415,7 +405,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤：Step-by-Step"><span class="nav-number">1.</span> <span class="nav-text">步骤：Step by Step</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
