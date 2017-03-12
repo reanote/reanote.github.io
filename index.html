@@ -217,7 +217,7 @@
               
                 
                 <a class="post-title-link" href="/2017/03/12/first-step-of-scrapy/" itemprop="url">
-                  Scrapy启动之后
+                  Scrapy之配置加载
                 </a>
               
             
@@ -266,16 +266,15 @@
       
         
           
-            <h2 id="&#x542F;&#x52A8;Scrapy&#x53D1;&#x751F;&#x7684;&#x4E8B;&#xFF1A;"><a href="#&#x542F;&#x52A8;Scrapy&#x53D1;&#x751F;&#x7684;&#x4E8B;&#xFF1A;" class="headerlink" title="&#x542F;&#x52A8;Scrapy&#x53D1;&#x751F;&#x7684;&#x4E8B;&#xFF1A;"></a>&#x542F;&#x52A8;Scrapy&#x53D1;&#x751F;&#x7684;&#x4E8B;&#xFF1A;</h2><img src="http://www.plantuml.com/plantuml/svg/SyfFqhLppCbCJbMmKiX8pSd91m00">
+            <h2 id="&#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x2014;&#x2014;Scrapy&#x542F;&#x52A8;&#x540E;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;"><a href="#&#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x2014;&#x2014;Scrapy&#x542F;&#x52A8;&#x540E;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;" class="headerlink" title="&#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x2014;&#x2014;Scrapy&#x542F;&#x52A8;&#x540E;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;"></a>&#x914D;&#x7F6E;&#x52A0;&#x8F7D;&#x2014;&#x2014;Scrapy&#x542F;&#x52A8;&#x540E;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;</h2><img src="http://www.plantuml.com/plantuml/svg/SyfFqhLppCbCJbMmKiX8pSd91m00">
 <ol>
-<li><p>&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#xFF1A;</p>
-<ul>
+<li>&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#xFF1A;<ul>
 <li>&#x83B7;&#x53D6;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4E00;&#x822C;&#x4E3A;None&#xFF1B;</li>
 <li>&#x65E7;&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;<code>scrapy.conf</code>&#xFF0C;&#x4E00;&#x822C;&#x4E3A;None&#xFF1B;</li>
 <li>&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x914D;&#x7F6E;&#xFF1B;<ul>
 <li>&#x73AF;&#x5883;&#x53D8;<code>SCRAPY_PROJECT</code>&#x4E2D;&#x8BFB;&#x53D6;&#x9879;&#x76EE;&#x4FE1;&#x606F;<ul>
 <li>&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;&#xFF1B;<ul>
-<li>&#x4ECE;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;&#x8FD4;&#x56DE;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x7684;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF09;&#xFF1A;<ul>
+<li>&#x4ECE;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;,&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7C7B;(&#x6240;&#x6709;&#x53EF;&#x8BFB;&#x6587;&#x4EF6;&#x90FD;&#x8BFB;)<ul>
 <li>/etc/scrapy.cfg;</li>
 <li>c:\scrapy\scrapy.cfg;</li>
 <li>~/.config/scrapy.cfg;</li>
@@ -297,9 +296,6 @@
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>&#x53D1;&#x73B0;scrapy&#x4E2D;&#xFF0C;scrapy/utils/conf.py:96,98&#x884C;&#x4EE3;&#x7801;<code>cfg.read(sources)</code>&#x662F;&#x65E0;&#x6548;&#x4EE3;&#x7801;;</p>
-</blockquote>
 </li>
 </ol>
 
